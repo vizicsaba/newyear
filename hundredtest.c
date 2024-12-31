@@ -8,12 +8,13 @@ int calculate_sum(int n) {
     }
     return sum;
     printf("Az osszeg: %d\\n", sum);
-    printf("A szamtani atlag: %.2f\\n", calculate_average);
+    
 }
 
 // Átlag kiszámítása
 double calculate_average(int sum, int count) {
     return (double)sum / count;
+    printf("A szamtani atlag: %.2f\\n", calculate_average);
 }
 
 // Csak akkor forduljon, ha NEM tesztelési környezetben használjuk

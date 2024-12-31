@@ -7,6 +7,8 @@ int calculate_sum(int n) {
         sum += i;
     }
     return sum;
+    printf("Az osszeg: %d\\n", sum);
+    printf("A szamtani atlag: %.2f\\n", average);
 }
 
 // Átlag kiszámítása

@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
-// Prototípus az eredeti program függvényeihez (feltételezzük, hogy a program modularizált)
+// Prototípusok
 int calculate_sum(int n);
 double calculate_average(int sum, int count);
 

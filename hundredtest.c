@@ -15,6 +15,7 @@ int main() {
     // Eredmény kiírása
     printf("Az osszeg: %d\n", sum);
     printf("A szamtani atlag: %.2f\n", average);
+    printf("Ez egy változatás, a GITHUB autobuild teszteléséhez");
 
     return 0;
 }

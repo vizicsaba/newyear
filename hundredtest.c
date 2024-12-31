@@ -1,21 +1,24 @@
 #include <stdio.h>
 
-int main() {
+int calculate_sum(int n) {
     int sum = 0;
-    int count = 100;
-
-    // Számok összeadása 1-től 100-ig
-    for (int i = 1; i <= count; i++) {
+    for (int i = 1; i <= n; i++) {
         sum += i;
     }
+    return sum;
+}
 
-    // Számtani átlag kiszámítása
-    double average = (double)sum / count;
+double calculate_average(int sum, int count) {
+    return (double)sum / count;
+}
 
-    // Eredmény kiírása
-    printf("Az osszeg: %d\n", sum);
-    printf("A szamtani atlag: %.2f\n", average);
-    printf("Ez egy változatás, a GITHUB autobuild teszteléséhez");
+int main() {
+    int count = 100;
+    int sum = calculate_sum(count);
+    double average = calculate_average(sum, count);
+
+    printf("Az osszeg: %d\\n", sum);
+    printf("A szamtani atlag: %.2f\\n", average);
 
     return 0;
 }

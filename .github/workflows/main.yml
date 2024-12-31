@@ -21,13 +21,13 @@ jobs:
       - name: Install GCC
         run: sudo apt-get update && sudo apt-get install -y build-essential
 
-      # 3. Fordítás az eredeti programhoz
-      - name: Compile hundredtest
+      # 3. Fordítás a futtatható programhoz
+      - name: Compile main program
         run: gcc -o hundredtest hundredtest.c
 
-      # 4. Fordítás a tesztfájlhoz
+      # 4. Fordítás a tesztekhez
       - name: Compile tests
-        run: gcc -o test_hundredtest hundredtest.c test_hundredtest.c
+        run: gcc -DTESTING test_hundredtest.c hundredtest.c -o test_hundredtest
 
       # 5. Tesztek futtatása
       - name: Run tests

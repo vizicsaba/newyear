@@ -18,7 +18,7 @@ void run_tests() {
     // Teszt az átlag kiszámítására
     double average = calculate_average(sum, 100);
     if (average == 50.5) {
-        printf("Avarage result:%.2f\\n", avarage);
+        printf("Avarage result:%.2f\\n", average);
         printf("Average test passed.\\n");
     } else {
         printf("Average test failed: expected 50.5, got %.2f\\n", average);
